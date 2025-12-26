@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Richard Stallman portfolio CV. Free software pioneer, GNU founder, and FSF president. Minimalist retro one-page site showcasing his work in software freedom.">
+    <meta name="theme-color" content="#0f9d9a">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Richard Stallman - Free Software Pioneer">
+    <meta property="og:description" content="Portfolio and CV of Richard Stallman, founder of GNU Project and Free Software Foundation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/assets/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Richard Stallman - Free Software Pioneer">
+    <meta name="twitter:description" content="Portfolio showcasing the work of free software advocate Richard Stallman.">
+    
+    <title>Richard Stallman - Free Software Pioneer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Richard Stallman",
+      "alternateName": "RMS",
+      "url": "https://example.com",
+      "jobTitle": "Free Software Advocate & Founder",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Free Software Foundation"
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Richard_Stallman",
+        "https://stallman.org",
+        "https://www.fsf.org"
+      ],
+      "description": "Founder of the GNU Project and Free Software Foundation, creator of GPL license"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">RMS</div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Richard Stallman</h1>
+                <p class="tagline">Free Software Pioneer</p>
+                <p style="max-width: 600px; margin: 0 auto 2rem;">Founder of the GNU Project and the Free Software Foundation. Advocate for software freedom and creator of the GPL license that powers the open source movement.</p>
+                <div>
+                    <a href="#projects" class="cta-button">View Projects</a>
+                    <a href="#cv" class="cta-button secondary">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header">
+                <h2>About Richard</h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>Richard Matthew Stallman, often known by his initials RMS, is a pioneering figure in the free software movement. His work has fundamentally shaped how we think about software freedom, user rights, and collaborative development in the digital age.</p>
+                    <p>As the founder of the GNU Project in 1983, Stallman initiated the creation of a completely free operating system. His vision was revolutionary: software should respect users' freedom to run, study, modify, and share it. This philosophy became the foundation of the modern open source movement.</p>
+                    <p>Beyond technical contributions, Stallman established the Free Software Foundation and authored the GNU General Public License (GPL), one of the most widely used free software licenses. His advocacy has influenced countless developers, organizations, and governments worldwide.</p>
+                    
+                    <div class="milestone fade-in">
+                        <div class="milestone-year">1983</div>
+                        <div>Founded the GNU Project to create a free Unix-like operating system</div>
+                    </div>
+                    <div class="milestone fade-in">
+                        <div class="milestone-year">1985</div>
+                        <div>Established the Free Software Foundation to support the free software movement</div>
+                    </div>
+                    <div class="milestone fade-in">
+                        <div class="milestone-year">1989</div>
+                        <div>Published the GNU General Public License (GPL)</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" fill="white" opacity="0.3"/>
+                        <text x="50" y="60" font-size="40" font-family="monospace" fill="white" text-anchor="middle">GNU</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <h2>Areas of Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3>Software Freedom</h3>
+                    <p>Champion of user rights and software freedom. Defined the four essential freedoms that form the foundation of free software philosophy.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                        </svg>
+                    </div>
+                    <h3>GPL & Licensing</h3>
+                    <p>Creator of the GNU General Public License, ensuring software remains free and modifications stay free. Pioneered copyleft concept.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3>GNU Project</h3>
+                    <p>Founder and architect of the GNU operating system. Created essential tools like GCC, Emacs, and GDB that power modern computing.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3>FSF Leadership</h3>
+                    <p>Founded and led the Free Software Foundation, advocating for user freedom and educating the public about software ethics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Key Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in" data-project="gnu">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50" y="60" font-size="30" font-family="monospace" fill="white" text-anchor="middle">GNU/</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>GNU Operating System</h3>
+                        <div>
+                            <span class="project-tag">Operating System</span>
+                            <span class="project-tag">1983</span>
+                        </div>
+                        <p>A complete Unix-like operating system composed entirely of free software. Combined with the Linux kernel, it powers millions of systems worldwide.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-project="gcc">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50" y="60" font-size="25" font-family="monospace" fill="white" text-anchor="middle">GCC</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>GNU Compiler Collection</h3>
+                        <div>
+                            <span class="project-tag">Compiler</span>
+                            <span class="project-tag">Development</span>
+                        </div>
+                        <p>A comprehensive compiler system supporting multiple programming languages. The backbone of open source software development.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-project="emacs">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="30" width="60" height="40" fill="white" opacity="0.3"/>
+                            <text x="50" y="58" font-size="20" font-family="monospace" fill="white" text-anchor="middle">emacs</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>GNU Emacs</h3>
+                        <div>
+                            <span class="project-tag">Editor</span>
+                            <span class="project-tag">Extensible</span>
+                        </div>
+                        <p>An extensible, customizable text editor that's also a Lisp interpreter. One of the most powerful and enduring development environments.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-project="gpl">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50" y="60" font-size="25" font-family="monospace" fill="white" text-anchor="middle">GPL</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>GNU GPL License</h3>
+                        <div>
+                            <span class="project-tag">License</span>
+                            <span class="project-tag">Copyleft</span>
+                        </div>
+                        <p>Revolutionary software license that ensures freedom is preserved through copyleft. Used by thousands of projects worldwide.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-project="fsf">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50" y="60" font-size="25" font-family="monospace" fill="white" text-anchor="middle">FSF</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>Free Software Foundation</h3>
+                        <div>
+                            <span class="project-tag">Organization</span>
+                            <span class="project-tag">Advocacy</span>
+                        </div>
+                        <p>Non-profit organization dedicated to promoting computer user freedom and defending the rights of all free software users.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in" data-project="gdb">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50" y="60" font-size="25" font-family="monospace" fill="white" text-anchor="middle">GDB</text>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3>GNU Debugger</h3>
+                        <div>
+                            <span class="project-tag">Debugging</span>
+                            <span class="project-tag">Tool</span>
+                        </div>
+                        <p>Powerful debugger for multiple programming languages. Essential tool for software developers debugging complex applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv">
+            <div class="section-header">
+                <h2>Curriculum Vitae</h2>
+            </div>
+            <div class="cv-content">
+                <div>
+                    <div class="cv-section">
+                        <h3>Key Positions</h3>
+                        <div class="cv-item">
+                            <div class="cv-title">President, Free Software Foundation</div>
+                            <div class="cv-date">1985 – Present</div>
+                            <p>Leading the organization dedicated to promoting computer user freedom and defending the rights of all free software users globally.</p>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-title">Founder & Leader, GNU Project</div>
+                            <div class="cv-date">1983 – Present</div>
+                            <p>Initiated and continue to lead the development of a complete free Unix-like operating system composed entirely of free software.</p>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-title">Staff Programmer, MIT AI Lab</div>
+                            <div class="cv-date">1971 – 1983</div>
+                            <p>Developed the Emacs text editor and contributed to various AI research projects at MIT's Artificial Intelligence Laboratory.</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h3>Major Achievements</h3>
+                        <div class="cv-item">
+                            <div class="cv-title">GNU General Public License</div>
+                            <div class="cv-date">1989</div>
+                            <p>Authored the GPL, pioneering the concept of copyleft to ensure software freedom is preserved.</p>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-title">GNU Compiler Collection (GCC)</div>
+                            <div class="cv-date">1987</div>
+                            <p>Created the first version of GCC, now one of the most important free software compiler systems.</p>
+                        </div>
+                        <div class="cv-item">
+                            <div class="cv-title">GNU Emacs</div>
+                            <div class="cv-date">1985</div>
+                            <p>Developed GNU Emacs, an extensible and customizable text editor that remains widely used today.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cv-section">
+                        <h3>Education</h3>
+                        <div class="cv-item">
+                            <div class="cv-title">Harvard University</div>
+                            <div class="cv-date">1974</div>
+                            <p>Bachelor of Arts in Physics</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h3>Awards & Recognition</h3>
+                        <div class="cv-item">
+                            <div class="cv-date">Multiple honors for contributions to free software and digital rights advocacy</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="#" class="cta-button" style="display: inline-block; width: 100%; text-align: center;">Download Full CV (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="quotes">
+            <div class="section-header">
+                <h2>Notable Quotes & Philosophy</h2>
+            </div>
+            <div class="quote-card fade-in">
+                <p class="quote-text">"Free software is a matter of liberty, not price. To understand the concept, you should think of 'free' as in 'free speech,' not as in 'free beer.'"</p>
+                <p class="quote-author">— Richard Stallman on Free Software</p>
+            </div>
+            <div class="quote-card fade-in">
+                <p class="quote-text">"Proprietary software keeps users divided and helpless. Divided because each user is forbidden to share it with others, and helpless because the users can't change it since they don't have the source code."</p>
+                <p class="quote-author">— Richard Stallman on Software Freedom</p>
+            </div>
+            <div class="quote-card fade-in">
+                <p class="quote-text">"If programmers deserve to be rewarded for creating innovative programs, by the same token they deserve to be punished if they restrict the use of these programs."</p>
+                <p class="quote-author">— Richard Stallman on Software Ethics</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message" id="nameError">Please enter your name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <div class="error-message" id="messageError">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <p style="margin-bottom: 2rem;">Find more information about free software advocacy and the GNU Project through these resources.</p>
+                    <div class="social-links">
+                        <a href="https://www.fsf.org" class="social-link" target="_blank" rel="noopener">
+                            <span>🏛️</span>
+                            <span>Free Software Foundation</span>
+                        </a>
+                        <a href="https://www.gnu.org" class="social-link" target="_blank" rel="noopener">
+                            <span>🐃</span>
+                            <span>GNU Project</span>
+                        </a>
+                        <a href="https://stallman.org" class="social-link" target="_blank" rel="noopener">
+                            <span>🌐</span>
+                            <span>Personal Website</span>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Richard_Stallman" class="social-link" target="_blank" rel="noopener">
+                            <span>📖</span>
+                            <span>Wikipedia</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Richard Stallman Portfolio. Free as in Freedom.</p>
+        <p>Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GPL v3</a> | <a href="https://github.com/yourusername/2ite-web-stallman-richard">View on GitHub</a></p>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
