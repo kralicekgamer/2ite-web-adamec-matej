@@ -1,17 +1,3 @@
-/**
- * Richard Stallman Portfolio - Main JavaScript
- * 
- * This file contains all interactive functionality for the portfolio:
- * - Mobile navigation toggle
- * - Smooth scroll with active link highlighting
- * - Sticky header with shadow on scroll
- * - Scroll-triggered fade-in animations
- * - Project modal functionality
- * - Form validation
- * 
- * All functions are kept simple and well-commented for easy understanding.
- */
-
 // ============================================
 // INITIALIZATION - Runs when DOM is loaded
 // ============================================
