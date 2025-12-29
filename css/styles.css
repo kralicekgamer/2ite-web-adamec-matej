@@ -543,10 +543,6 @@ cite {
 * MEDIA QUERIES
 */
 @media (max-width: 768px) {
-    * {
-        border: 1px solid red;
-    }
-
     .nav-list {
         position: fixed;
         top: 0;
