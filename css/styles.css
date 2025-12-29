@@ -543,7 +543,9 @@ cite {
 * MEDIA QUERIES
 */
 @media (max-width: 768px) {
-    * {}
+    * {
+        border: 1px solid red;
+    }
 
     .nav-list {
         position: fixed;
@@ -560,6 +562,16 @@ cite {
 
     .nav-list.active {
         right: 0;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        position: absolute;
     }
 
     .menu-toggle {
