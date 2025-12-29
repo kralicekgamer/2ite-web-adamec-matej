@@ -1,315 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Richard Stallman portfolio CV. Free software pioneer, GNU founder, and FSF president. Minimalist retro one-page site showcasing his work in software freedom.">
+    <title>Richard Stallman | Free Software Pioneer</title>
+    <meta name="description" content="Richard Stallman portfolio CV. Free software pioneer, GNU founder. Minimalist retro one-page site.">
     <meta name="theme-color" content="#0f9d9a">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Richard Stallman - Free Software Pioneer">
-    <meta property="og:description" content="Portfolio and CV of Richard Stallman, founder of GNU Project and Free Software Foundation.">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:image" content="https://example.com/assets/og-image.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Richard Stallman - Free Software Pioneer">
-    <meta name="twitter:description" content="Portfolio showcasing the work of free software advocate Richard Stallman.">
-    
-    <title>Richard Stallman - Free Software Pioneer</title>
-    
+    <meta property="og:url" content="https://your-site.example/">
+    <meta property="og:title" content="Richard Stallman | Portfolio">
+    <meta property="og:description" content="Oficiální portfolio stylizované pro Richarda Stallmana. GNU, FSF a svobodný software.">
+    <meta property="og:image" content="https://picsum.photos/seed/stallman/1200/630">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Richard Stallman",
-      "alternateName": "RMS",
-      "url": "https://example.com",
-      "jobTitle": "Free Software Advocate & Founder",
+      "@context":"https://schema.org",
+      "@type":"Person",
+      "name":"Richard Stallman",
+      "url":"https://your-site.example",
+      "jobTitle":"Free Software Advocate",
+      "sameAs":["https://en.wikipedia.org/wiki/Richard_Stallman", "https://www.gnu.org/people/rms.html"],
       "worksFor": {
-        "@type": "Organization",
-        "name": "Free Software Foundation"
-      },
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Richard_Stallman",
-        "https://stallman.org",
-        "https://www.fsf.org"
-      ],
-      "description": "Founder of the GNU Project and Free Software Foundation, creator of GPL license"
+          "@type": "Organization",
+          "name": "Free Software Foundation"
+      }
     }
     </script>
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">RMS</div>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">RMS<span style="color:var(--accent-teal)">.cv</span></a>
+            
             <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">O mně</a></li>
+                    <li><a href="#skills" class="nav-link">Dovednosti</a></li>
+                    <li><a href="#portfolio" class="nav-link">Projekty</a></li>
+                    <li><a href="#quotes" class="nav-link">Filozofie</a></li>
+                    <li><a href="#contact" class="nav-link btn btn-primary" style="padding: 0.4rem 1rem;">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- HERO SECTION -->
         <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Richard Stallman</h1>
-                <p class="tagline">Free Software Pioneer</p>
-                <p style="max-width: 600px; margin: 0 auto 2rem;">Founder of the GNU Project and the Free Software Foundation. Advocate for software freedom and creator of the GPL license that powers the open source movement.</p>
-                <div>
-                    <a href="#projects" class="cta-button">View Projects</a>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="mono-text">Free Software Pioneer</span>
+                    <h1>Richard M. Stallman</h1>
+                    <p>Zakladatel projektu GNU a Free Software Foundation. Bojuji za svobodu uživatelů v digitálním věku.</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; @media(min-width: 769px){justify-content: flex-start;}">
+                        <a href="#contact" class="btn">Kontaktovat</a>
+                        <a href="#portfolio" class="btn btn-primary">Projekty GNU</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- ABOUT SECTION -->
         <section id="about">
-            <div class="section-header">
-                <h2>About Richard</h2>
-            </div>
-            <div class="about-grid">
-                <div>
-                    <p>Richard Matthew Stallman, often known by his initials RMS, is a pioneering figure in the free software movement. His work has fundamentally shaped how we think about software freedom, user rights, and collaborative development in the digital age.</p>
-                    <p>As the founder of the GNU Project in 1983, Stallman initiated the creation of a completely free operating system. His vision was revolutionary: software should respect users' freedom to run, study, modify, and share it. This philosophy became the foundation of the modern open source movement.</p>
-                    <p>Beyond technical contributions, Stallman established the Free Software Foundation and authored the GNU General Public License (GPL), one of the most widely used free software licenses. His advocacy has influenced countless developers, organizations, and governments worldwide.</p>
-                    
-                    <div class="milestone fade-in">
-                        <div class="milestone-year">1983</div>
-                        <div>Founded the GNU Project to create a free Unix-like operating system</div>
+            <div class="container">
+                <h2>O mně</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Jsem softwarový inženýr a aktivista, jehož životní práce je odstranit restrikce v kopírování a redistribuci softwaru. Věřím, že software by měl sdílet svobodu, ne jen být technickým nástrojem.</p>
+                        <p>Moje cesta začala v laboratoři MIT AI, ale brzy jsem realized, že proprietární software není cesta. Založil jsem hnutí za svobodný software a koncept "copyleft".</p>
+                        <p>Můj cíl je jednoduchý: zajistit, aby každý uživatel počítače měl kontrolu nad softwarem, který používá.</p>
                     </div>
-                    <div class="milestone fade-in">
-                        <div class="milestone-year">1985</div>
-                        <div>Established the Free Software Foundation to support the free software movement</div>
-                    </div>
-                    <div class="milestone fade-in">
-                        <div class="milestone-year">1989</div>
-                        <div>Published the GNU General Public License (GPL)</div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1971 - 1980s</div>
+                            <h3>Hacker u MIT</h3>
+                            <p>Práce v laboratoři AI na projektu ITS, Emacs a dalších nástrojích.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1983</div>
+                            <h3>GNU Projekt</h3>
+                            <p>Ohlášení záměru vytvořit kompletní Unix-like operační systém svobodného softwaru.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1985</div>
+                            <h3>Free Software Foundation</h3>
+                            <p>Založení naduce pro podporu vývoje svobodného softwaru a GNU GPL licence.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- SKILLS SECTION -->
         <section id="skills">
-            <div class="section-header">
-                <h2>Areas of Expertise</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                        </svg>
+            <div class="container">
+                <h2>Oblasti působení</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-solid fa-terminal skill-icon"></i>
+                        <h3>GNU System</h3>
+                        <p>Architektura a filozofie kompletního operačního systému.</p>
                     </div>
-                    <h3>Software Freedom</h3>
-                    <p>Champion of user rights and software freedom. Defined the four essential freedoms that form the foundation of free software philosophy.</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
-                        </svg>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-scale-balanced skill-icon"></i>
+                        <h3>Copyleft</h3>
+                        <p>Právní mechanismus pro ochranu svobod softwaru (GPL, AGPL).</p>
                     </div>
-                    <h3>GPL & Licensing</h3>
-                    <p>Creator of the GNU General Public License, ensuring software remains free and modifications stay free. Pioneered copyleft concept.</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
-                        </svg>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-code skill-icon"></i>
+                        <h3>C Programování</h3>
+                        <p>Nízková úroveň, optimalizace a tvorba překladačů (GCC).</p>
                     </div>
-                    <h3>GNU Project</h3>
-                    <p>Founder and architect of the GNU operating system. Created essential tools like GCC, Emacs, and GDB that power modern computing.</p>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                        </svg>
-                    </div>
-                    <h3>FSF Leadership</h3>
-                    <p>Founded and led the Free Software Foundation, advocating for user freedom and educating the public about software ethics.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="section-header">
-                <h2>Key Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card fade-in" data-project="gnu">
-                    <div class="project-content">
-                        <h3>GNU Operating System</h3>
-                        <div>
-                            <span class="project-tag">Operating System</span>
-                            <span class="project-tag">1983</span>
-                        </div>
-                        <p>A complete Unix-like operating system composed entirely of free software. Combined with the Linux kernel, it powers millions of systems worldwide.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in" data-project="gcc">
-                    <div class="project-content">
-                        <h3>GNU Compiler Collection</h3>
-                        <div>
-                            <span class="project-tag">Compiler</span>
-                            <span class="project-tag">Development</span>
-                        </div>
-                        <p>A comprehensive compiler system supporting multiple programming languages. The backbone of open source software development.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in" data-project="emacs">
-                    <div class="project-content">
-                        <h3>GNU Emacs</h3>
-                        <div>
-                            <span class="project-tag">Editor</span>
-                            <span class="project-tag">Extensible</span>
-                        </div>
-                        <p>An extensible, customizable text editor that's also a Lisp interpreter. One of the most powerful and enduring development environments.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in" data-project="gpl">
-                    <div class="project-content">
-                        <h3>GNU GPL License</h3>
-                        <div>
-                            <span class="project-tag">License</span>
-                            <span class="project-tag">Copyleft</span>
-                        </div>
-                        <p>Revolutionary software license that ensures freedom is preserved through copyleft. Used by thousands of projects worldwide.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in" data-project="fsf">
-                    <div class="project-content">
-                        <h3>Free Software Foundation</h3>
-                        <div>
-                            <span class="project-tag">Organization</span>
-                            <span class="project-tag">Advocacy</span>
-                        </div>
-                        <p>Non-profit organization dedicated to promoting computer user freedom and defending the rights of all free software users.</p>
-                    </div>
-                </div>
-                <div class="project-card fade-in" data-project="gdb">
-                    <div class="project-content">
-                        <h3>GNU Debugger</h3>
-                        <div>
-                            <span class="project-tag">Debugging</span>
-                            <span class="project-tag">Tool</span>
-                        </div>
-                        <p>Powerful debugger for multiple programming languages. Essential tool for software developers debugging complex applications.</p>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-hand-holding-heart skill-icon"></i>
+                        <h3>Ethics</h3>
+                        <p>Ethika digitální společnosti, soukromí a copyrightové reformy.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>Klíčové projekty</h2>
+                <div class="portfolio-grid">
+                    <!-- Projekt 1 -->
+                    <article class="project-card" data-title="Emacs Editor" data-desc="Rozšiřitelný, přizpůsobitelný textový editor a vývojové prostředí. Napsaný převážně v Lispu a C.">
+                        <div class="project-icon-wrapper">
+                            <i class="fa-solid fa-keyboard"></i>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">TEXT EDITOR</span>
+                            <h3>Emacs</h3>
+                            <p>Rozšiřitelný, přizpůsobitelný textový editor.</p>
+                        </div>
+                    </article>
 
-        <!-- Quotes Section -->
-        <section id="quotes" class="quotes">
-            <div class="section-header">
-                <h2>Notable Quotes & Philosophy</h2>
-            </div>
-            <div class="quote-card fade-in">
-                <p class="quote-text">"Free software is a matter of liberty, not price. To understand the concept, you should think of 'free' as in 'free speech,' not as in 'free beer.'"</p>
-                <p class="quote-author">— Richard Stallman on Free Software</p>
-            </div>
-            <div class="quote-card fade-in">
-                <p class="quote-text">"Proprietary software keeps users divided and helpless. Divided because each user is forbidden to share it with others, and helpless because the users can't change it since they don't have the source code."</p>
-                <p class="quote-author">— Richard Stallman on Software Freedom</p>
-            </div>
-            <div class="quote-card fade-in">
-                <p class="quote-text">"If programmers deserve to be rewarded for creating innovative programs, by the same token they deserve to be punished if they restrict the use of these programs."</p>
-                <p class="quote-author">— Richard Stallman on Software Ethics</p>
+                    <!-- Projekt 2 -->
+                    <article class="project-card" data-title="GNU Compiler Collection" data-desc="Sada kompilátorů podporujících různé programovací jazyky a hardwarové platformy. Základ moderního vývoje softwaru.">
+                        <div class="project-icon-wrapper">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">COMPILER SUITE</span>
+                            <h3>GCC</h3>
+                            <p>Sada kompilátorů pro různé jazyky.</p>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 3 -->
+                    <article class="project-card" data-title="The GPL License" data-desc="Nejpoužívanější licence svobodného softwaru, která zajišťuje, že software zůstane svobodný i pro budoucí generace.">
+                        <div class="project-icon-wrapper">
+                            <i class="fa-solid fa-scroll"></i>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-meta">LICENSE</span>
+                            <h3>GNU GPL</h3>
+                            <p>Právní rámec pro svobodný software.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- QUOTES SECTION -->
+        <section id="quotes">
+            <div class="container quotes-wrapper">
+                <span class="mono-text">Vybrané myšlenky</span>
+                <blockquote>
+                    "Svobodný software je otázkou svobody, ne ceny. Chápej to jako svobodu řeči, ne jako pivo zdarma."
+                    <cite>- Richard Stallman</cite>
+                </blockquote>
+                <blockquote>
+                    "Cílem softwaru není aby uživatelé měli moc, ale aby uživatelé odevzdali svou moc vývojářům."
+                    <cite>- Richard Stallman</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
         <section id="contact">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-            </div>
-            <div class="contact-grid">
-                <div>
-                    <h3>Send a Message</h3>
+            <div class="container">
+                <h2>Kontakt</h2>
+                <div class="contact-wrapper">
                     <form id="contactForm" novalidate>
                         <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
-                            <div class="error-message" id="nameError">Please enter your name</div>
+                            <label for="name" class="form-label">Jméno</label>
+                            <input type="text" id="name" class="form-control" required>
+                            <div class="error-msg">Prosím vyplňte jméno.</div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                            <div class="error-message" id="emailError">Please enter a valid email address</div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                            <div class="error-msg">Prosím vyplňte platný email.</div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <div class="error-message" id="messageError">Please enter your message</div>
+                            <label for="message" class="form-label">Zpráva</label>
+                            <textarea id="message" rows="5" class="form-control" required></textarea>
+                            <div class="error-msg">Zpráva nesmí být prázdná.</div>
                         </div>
-                        <button type="submit" class="cta-button">Send Message</button>
+                        <button type="submit" class="btn">Odeslat zprávu</button>
                     </form>
-                </div>
-                <div>
-                    <h3>Connect</h3>
-                    <p style="margin-bottom: 2rem;">Find more information about free software advocacy and the GNU Project through these resources.</p>
-                    <div class="social-links">
-                        <a href="https://www.fsf.org" class="social-link" target="_blank" rel="noopener">
-                            <span>🏛️</span>
-                            <span>Free Software Foundation</span>
-                        </a>
-                        <a href="https://www.gnu.org" class="social-link" target="_blank" rel="noopener">
-                            <span>🐃</span>
-                            <span>GNU Project</span>
-                        </a>
-                        <a href="https://stallman.org" class="social-link" target="_blank" rel="noopener">
-                            <span>🌐</span>
-                            <span>Personal Website</span>
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Richard_Stallman" class="social-link" target="_blank" rel="noopener">
-                            <span>📖</span>
-                            <span>Wikipedia</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025. Not made by human.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Richard Stallman Tribute. Created for educational purposes.</p>
+        </div>
     </footer>
 
-    <!-- Modal for Project Details -->
-    <div class="modal" id="projectModal" aria-hidden="true">
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal">
         <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">&times;</button>
-            <div id="modalBody"></div>
+            <button class="close-modal">&times;</button>
+            <h3 id="modalTitle" style="margin-bottom: 1rem;">Project Title</h3>
+            <p id="modalDesc">Project description goes here...</p>
+            <div style="margin-top: 2rem;">
+                <a href="#" class="btn btn-primary">Zobrazit detail</a>
+            </div>
         </div>
     </div>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">Zpráva odeslána!</div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

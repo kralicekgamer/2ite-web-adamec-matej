@@ -7,7 +7,6 @@ A minimalist, retro-inspired single-page portfolio website dedicated to Richard 
 - **HTML5** - Semantic markup with proper document structure
 - **CSS3** - Modern layout with Flexbox and Grid, CSS variables, animations
 - **Vanilla JavaScript** - Lightweight interactivity without dependencies
-- **Google Fonts** - Inter (body text) and Space Mono (headings/monospace)
 
 ## What I'm Proud Of
 
